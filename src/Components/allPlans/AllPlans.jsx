@@ -1,12 +1,12 @@
 import React from 'react'
-import Plan from './Plan'
+import Plan from '../plan/Plan'
 import './AllPlans.css'
 
 const AllPlans = (props) => {
 
 
   return (
-    <div>
+    <div className='add_plan'>
       {
         props.plans?.map(plan => <Plan handleDelete={props.handleDelete} item= {plan} />)
       }

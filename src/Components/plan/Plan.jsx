@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Plan.css"
 
 const Plan = ({item, handleDelete}) => {
     
@@ -6,7 +7,7 @@ const Plan = ({item, handleDelete}) => {
     <div> 
       <h1>{item.plan} </h1>
       <p>{item.notes} </p>
-      <button onClick={()=>handleDelete(item.id)}>Delete</button>
+      <button onClick={()=>handleDelete(item.id)} className="delete_btn" >Delete</button>
     </div>
   )
 }

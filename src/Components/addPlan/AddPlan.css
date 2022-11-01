@@ -1,0 +1,41 @@
+
+.mycont{
+    display: flex;
+    flex-direction: column;
+    background-color: #231138;
+    color: white;
+    min-height: 50vh;
+    width: 20vw;
+    border-radius: 10px;
+    gap: 20px;
+    padding: 30px;
+}
+
+.myform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.myform input{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    outline: none;
+    border-radius: 10px;
+}
+h2{
+    color: #e6d6ef;
+}
+
+.submit{
+    background-color: rgb(157, 80, 228);
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: larger;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import './AddPlan.css'
 
 const AddPlan = (props) => {
   const [plan, setPlan] = useState({
@@ -23,24 +24,24 @@ const AddPlan = (props) => {
   };
 
   return (
-    <div>
-      
-      <form onSubmit={handleSubmit}>
-        <input
+    <div className="mycont">
+      <h2>Make a plan</h2>
+      <form onSubmit={handleSubmit} className="myform" >
+        <input className="plan"
         name="plan"
           type="text"
           value={plan.plan}
           placeholder="Plan"
           onChange={handleChange}
         />
-        <input
+        <input className="notes"
           type="text"
           name="notes"
           value={plan.notes}
           placeholder="Note"
           onChange={handleChange}
         />
-        <button type="submit">Submit</button>
+        <button type="submit" className="submit">Submit</button>
       </form>
     </div>
   );

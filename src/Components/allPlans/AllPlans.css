@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400&family=Montserrat&family=Poppins&family=Rubik&family=Source+Sans+Pro:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.add_plan{
+    display: flex;
+    flex-direction: column;
+    background-color: #231138;
+    color: white;
+    min-height: 50vh;
+    width: 20vw;
+    border-radius: 10px;
+    gap: 20px;
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    
+}
+
+

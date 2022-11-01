@@ -1,6 +1,7 @@
-import AddPlan from "./Components/AddPlan";
+import AddPlan from "./Components/addPlan/AddPlan";
 import { useEffect, useState } from "react";
-import AllPlans from "./Components/AllPlans";
+import AllPlans from "./Components/allPlans/AllPlans";
+import "./App.css"
 
 function App() {
   const [plans, setPlans] = useState([]);
@@ -44,11 +45,16 @@ function App() {
   }, [plans])
 
   return (
-    <div>
+    <div className="app_cont">
       {/* Search Plans */}
-      <input value={search} onChange={handleSearch} type="search" placeholder="Search here" />
+      <div className="srch__btn">
+      <input className="search_btn" value={search} onChange={handleSearch} type="search" placeholder="Search here" />
+      </div>
+      <div className="app">
       <AddPlan addPlan={handlePlan} />
       <AllPlans handleDelete={handleDelete} plans={filteredPlans} />
+      </div>
+     
     </div>
   );
 }
